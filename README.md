@@ -1,5 +1,7 @@
 # ArrayLike Proxy
 
+![Status](https://travis-ci.org/devpaul/arraylike-proxy.svg?branch=master)
+
 Treat everything like an array! ArrayLike Proxy wraps a function, arrow function, object, arguments, or an array
  and allows you to treat it just like an array.
 
