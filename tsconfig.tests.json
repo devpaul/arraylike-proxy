@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"declaration": true,
+		"module": "amd",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"outDir": "./_build/tests",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"target": "ES6",
+		"paths": {
+			"src/*": [
+				"./_build/src/*"
+			]
+		}
+	},
+	"files": [
+		"./node_modules/intern/typings/intern/intern.d.ts"
+	],
+	"include": [
+		"./tests/**/*.ts"
+	]
+}

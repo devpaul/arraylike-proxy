@@ -1,0 +1,43 @@
+{
+  "name": "arraylike-proxy",
+  "author": "Paul Shannon <pshannon@sitepen.com>",
+  "version": "0.1.0",
+  "description": "Make things behave like an array",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/devpaul/arraylike-proxy/issues"
+  },
+  "engines": {
+    "node": "6"
+  },
+  "main": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devpaul/arraylike-proxy"
+  },
+  "scripts": {
+    "build-examples": "tsc -p tsconfig.examples.json && cp ./examples/index.html ./_build/examples/index.html",
+    "build-scripts": "tsc",
+    "build-tests": "tsc -p tsconfig.tests.json",
+    "build": "tsc",
+    "ci": "npm run lint && npm run build && npm run test",
+    "clean": "rm -rf _build",
+    "lint": "tslint src/**/*.ts",
+    "test": "tsc -p tsconfig.tests.json && ./node_modules/.bin/intern-client --config=./_build/tests/intern"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "0.0.2",
+    "dojo-loader": "^2.0.0-beta.7",
+    "intern": "^3.4.2",
+    "shelljs": "^0.7.5",
+    "tslint": "^4.0.2",
+    "typescript": "^2.0.10"
+  },
+  "keywords": [
+    "es6",
+    "proxy",
+    "arraylike",
+    "array"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"declaration": true,
+		"module": "umd",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"outDir": "./_build/src",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"jsx": "react",
+		"sourceMap": true,
+		"target": "ES6"
+	},
+	"files": [
+	],
+	"include": [
+		"./src/**/*.ts"
+	]
+}

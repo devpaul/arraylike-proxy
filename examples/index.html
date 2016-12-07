@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Examples</title>
+	<script src="../../node_modules/dojo-loader/loader.js"></script>
+	<script>
+		require.config({
+			packages: [
+				{ name: 'src', location: '../src' },
+				{ name: 'app', location: '.' }
+			]
+		});
+		require([ 'src/index', 'app/arguments', 'app/objects', 'app/arrowFunction', 'app/function' ], (ArrayLike) => {
+			window.ArrayLike = ArrayLike;
+		});
+	</script>
+</head>
+<body>
+	Open the console to see results. Use <i>ArrayLike</i> in the console.
+</body>
+</html>
