@@ -9,7 +9,7 @@ Treat everything like an array! ArrayLike Proxy wraps a function, arrow function
 
 Have an ArrayLike Object and you want to use it like an array? Too bad! You have to convert it first:
 
-```
+```ts
 import ArrayLike from 'src/ArrayLike';
 
 const array = {
@@ -33,7 +33,7 @@ array.length; // 5
 
 Want a method to maintain its own list?
 
-```
+```ts
 import ArrayLike from 'src/ArrayLike';
 
 const addMiddleware = (route, handler) => {
@@ -51,7 +51,7 @@ middleware('/user/:id', () => {}).middleware('/admin', () => {}).middleware('/',
 
 Or maybe we want to collect and build
 
-```
+```ts
 import ArrayLike from 'src/ArrayLike';
 
 const builder = function (name) {
@@ -74,7 +74,7 @@ Ok. Maybe that last example is a solution looking for a problem....
 
 How about an anarchronistic example. Nobody should be using `arguments` anymore!
 
-```
+```ts
 import ArrayLike from 'src/ArrayLike';
 
 function methodOne(one, two) {
