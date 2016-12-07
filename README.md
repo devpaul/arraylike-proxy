@@ -97,6 +97,30 @@ function methodTwo(two, one) {
 methodOne(1, 'I');  // I did it!
 ```
 
+## Installation & Usage
+
+This package is supported on modern browsers and Node 6+
+
+`npm install arraylike-proxy --save`
+
+### Node.js
+
+`const ArrayLike = require('arraylike-proxy');`
+
+### AMD
+
+```
+define([ 'arraylike-proxy' ], (ArrayLike) => {
+	
+});
+```
+
+### TypeScript
+
+`import ArrayLike from 'arraylike-proxy'`
+
+Ambient declarations are available as part of the npm package. TypeScript source is available from the github repo.
+
 ## Fin
 
 Wow! You made it! Well I guess you deserve a story. I made this library because JavaScript, for all its flexibility,
